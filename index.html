@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="homebg">
+  <head>
+    <title>Cube Info - Home</title>
+    <meta
+      name="viewport"
+      content="width-device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./cubeinfo.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo" id="navlogoid">
+        <h1>Cube Info</h1>
+      </div>
+      <ul class="nav__links" id="idnav__links">
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-Home">Home</a></li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-Introduction/index.html">Introduction</a>
+        </li>
+        <div class="dropdown">
+          <button class="dropbtn">Notation</button>
+          <div class="dropdown-content">
+            <a href="https://cwx07.github.io/Cube-Info-BasicN">Basic Notation</a>
+            <a href="https://cwx07.github.io/Cube-Info-DoubleN">Double Layer Notation</a>
+            <a href="https://cwx07.github.io/Cube-Info-OtherN">Other Notation</a>
+          </div>
+        </div>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-OLL">OLL</a>
+        </li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-PLL">PLL</a>
+        </li>
+      </ul>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li><a href="https://cwx07.github.io/Cube-Info-Home">Home</a></li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-Introduction/index.html"
+            >Introduction</a
+          >
+        </li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-BasicN">Basic Notation</a>
+        </li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-DoubleN"
+            >Double Layer Notation</a
+          >
+        </li>
+        <li>
+          <a href="https://cwx07.github.io/Cube-Info-OtherN">Other Notation</a>
+        </li>
+        <li><a href="https://cwx07.github.io/Cube-Info-OLL">OLL</a></li>
+        <li><a href="https://cwx07.github.io/Cube-Info-PLL">PLL</a></li>
+      </div>
+    </nav>
+
+    <div class="sectionparent">
+      <section id="home" class="home__section-2">
+        <div class="container">
+          <a href="https://cwx07.github.io/Cube-Info-Introduction/index.html">
+            <div class="home__header-1">
+              <img
+                src="./img/ruslan-keba-G5tOIWFZqFE-unsplash.jpg"
+                class="homepicture"
+              />
+              <h1>Introduction</h1>
+            </div>
+          </a>
+
+          <a href="https://cwx07.github.io/Cube-Info-BasicN">
+            <div class="home__header-1">
+              <img src="./Home Pictures/f.png" class="homepicture" />
+              <h1>Basic Notation</h1>
+            </div>
+          </a>
+
+          <a href="https://cwx07.github.io/Cube-Info-DoubleN">
+            <div class="home__header-1">
+              <img src="./Home Pictures/Rw.png" class="homepicture" />
+              <h1 id="dln">Double Layer Notation</h1>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="home" class="home__section-1">
+        <div class="container">
+          <a href="https://cwx07.github.io/Cube-Info-OtherN">
+            <div class="home__header-1">
+              <img src="./Home Pictures/M'.png" class="homepicture" />
+              <h1>Other Notation</h1>
+            </div>
+          </a>
+
+          <a href="https://cwx07.github.io/Cube-Info-OLL">
+            <div class="home__header-1">
+              <img src="./Home Pictures/24.png" class="homepicture" />
+              <h1>OLL</h1>
+            </div>
+          </a>
+
+          <a href="https://cwx07.github.io/Cube-Info-PLL">
+            <div class="home__header-1">
+              <img src="./Home Pictures/homepll.png" class="homepicture" />
+              <h1>PLL</h1>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.display = "none";
+        document.getElementById("navlogoid").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.display = "block";
+        document.getElementById("navlogoid").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
